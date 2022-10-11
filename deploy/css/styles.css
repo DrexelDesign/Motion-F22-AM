@@ -368,37 +368,32 @@ textarea {
 /* =============
     Footer
 ============= */
-#demo-1 {
-  display: grid;
-  grid-template-columns: auto 60vw auto;
-  grid-template-areas: ". demo-1 .";
-}
-#demo-1 section {
-  grid-area: demo-1;
-  background-color: var(--charcoal);
-  height: 50vh;
-}
-#demo-1 section h1 {
-  color: var(--white);
-  position: relative;
-  z-index: 10;
-}
-#demo-1 section div {
-  margin-top: 32px;
-}
-#demo-1 section #aqua-box {
-  height: 100px;
-  width: 100px;
+#section-1 {
   background-color: var(--aqua);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#demo-1 section #yellow-rect {
-  height: 100px;
-  width: 200px;
-  background-color: var(--yellow);
+
+#section-2 {
+  background-color: var(--charcoal);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#demo-1 section #red-circle {
+#section-2 #box {
   height: 100px;
   width: 100px;
   background-color: var(--red);
-  border-radius: 100%;
+  border: 3px solid var(--white);
+}
+
+#section-3 {
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
