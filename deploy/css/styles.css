@@ -382,6 +382,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
 }
 #section-2 #box {
   height: 100px;

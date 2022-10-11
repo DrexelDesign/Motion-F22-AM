@@ -1,48 +1,29 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function redAnimation(){
+gsap.registerPlugin(ScrollTrigger);
+
+
+function scrollAnimation(){
     var tl = gsap.timeline();
-    var mm = gsap.matchMedia();
-    mm.add("(max-width: 767px)", () => {
-        // mobile setup code here...
-        tl.to("#red-circle",{duration:1, 1:300})
-        .to("#red-circle",{duration:0.5, scaleX:"90%"});
-    });
-
-    mm.add("(min-width: 768px)", () => {
-        // desktop setup code here...        
-        tl.to("#red-circle",{duration:1, y:300})
-        .to("#red-circle",{duration:1, scaleX:"70%"});
+    tl.to("#box", {
+        duration: 1,
+        x: 400,
+        rotation: 360,
+        scrollTrigger: {
+            trigger: "#box",
+            // toggleActions: "restart pause reverse pause",
+            markers:true,
+            start: "0px 50%",
+            end: "100% 10%",
+            scrub: true,
+            pin: true
+        }
     });
     return tl;
 }
 
-function aquaAnimation(){
-    var tl = gsap.timeline();
-    tl.to("#aqua-box",{duration:1, x:"100%"})
-        .to("#aqua-box",{duration:1, y:"100%"})
-        .to("#aqua-box",{duration:1, scale:1.5});
-    return tl;
-}
-
-function yellowAnimation(){
-    var tl = gsap.timeline();
-    var mm = gsap.matchMedia();
-
-    mm.add("(max-width: 767px)", () => {
-        // mobile setup code here...
-        tl.to("#yellow-rect",{duration:1, x:"50%"})
-    });
-
-    mm.add("(min-width: 768px)", () => {
-        // desktop setup code here...
-        tl.to("#yellow-rect",{duration:1, x:"200%"})
-        .to("#yellow-rect",{duration:1, scaleY:"50%"});
-    });
-    return tl;
-}
 
 var mainTL = gsap.timeline();
-mainTL.add(redAnimation())
-    .add(aquaAnimation())
-    .add(yellowAnimation(),"-=2.5");
+mainTL.add(scrollAnimation());
+
