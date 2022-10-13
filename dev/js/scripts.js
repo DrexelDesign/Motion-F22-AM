@@ -34,17 +34,12 @@ trailsBtn.addEventListener("mouseout",function(){
 
 
 function boxAnimation(){
-    var tl = gsap.timeline();
-    tl.from("#box", {
-		duration: 1,
-		alpha: 0,
-		rotation: -180,
-		x: "-300%",
-		scrollTrigger: { trigger: "#box", markers: true, scrub:true, end:"top center", start:"top 80%", pin:true }
-	})
+    var tl = gsap.timeline({scrollTrigger: { trigger: "#box", markers: true, scrub:true, end:"bottom center", start:"top 80%"}});
+    
+    tl.from("#box", {duration: 1,alpha: 0,rotation: -180,x: "-=300%"})
+    .to("#box", {duration: 1,alpha: 0,rotation: 48,y: 200});
     return tl;
 }
-
 
 
 var mainTimeline = gsap.timeline();
