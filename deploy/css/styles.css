@@ -492,13 +492,11 @@ textarea {
 }
 
 #hero-2 {
-  background-image: url("../img/heroes/hero-2.jpg");
-  background-size: cover;
-  background-position: bottom;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   #hero-2 {
@@ -518,6 +516,15 @@ textarea {
   font-family: "Righteous", cursive;
   font-weight: 400;
   font-size: 5rem;
+}
+#hero-2 #bg-img {
+  background-image: url("../img/heroes/hero-2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 #demo {

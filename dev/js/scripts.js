@@ -44,7 +44,7 @@ function boxAnimation(){
 
 
 function peakAnimation(){
-    var tl = gsap.timeline({scrollTrigger:{trigger:"#hiking", scrub:true,markers:true, end:"top 30%"}});
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#hiking", scrub:true,markers:false, end:"top 30%"}});
     tl.from("#hiking aside div",{duration:1, scale:3, alpha:0},"startPeak")
     .from("#hiking h1",{duration:1,x:"-=200%", alpha:0},"startPeak")
     .from("#hiking p",{duration:1,x:"-=200%", alpha:0},"startPeak")
@@ -52,7 +52,16 @@ function peakAnimation(){
 }
 
 
+function wonderAnimation(){
+    var tl =gsap.timeline({scrollTrigger:{trigger:"#hero-2", scrub:true,markers:true, end:"top 40%", start:"top 80%"}});
+    tl.from("#bg-img",{duration:5, clipPath:"inset(0 50%)"})
+    .from("#hero-2 h1",{duration:1, scale:3, alpha:0},"-=50%")
+    return tl;
+}
+
+
 var mainTimeline = gsap.timeline();
 mainTimeline.add(heroAnimation())
     .add(boxAnimation())
-    .add(peakAnimation());
+    .add(peakAnimation())
+    .add(wonderAnimation());
