@@ -1,0 +1,53 @@
+/* =============
+    Navigation
+============= */
+#nav-container {
+    ul {
+        height: 100%;
+
+        @include lg {
+            display: flex;
+        }
+
+        li {
+            margin-bottom: 20px;
+
+            @include lg {
+                align-items: center;
+                border-right: 2px solid $charcoal;
+                display: flex;
+                margin-bottom: 0px;
+            }
+
+            a:link,
+            a:visited {
+                color: $white;
+                font-family: 'Comfortaa', cursive;
+                padding: 0 20px;
+                text-decoration: none;
+                transition: 0.25s;
+                @include lg {
+                    color: $black;
+                }
+
+                &:hover,
+                &:active {
+                    color: $yellow;
+                }
+            }
+        }
+
+        li:first-child {
+            border: none;
+            display: none;
+
+            @include md{
+                display: list-item;
+            }
+        }
+
+        li:last-child {
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+/* =============
+    Header
+============= */
+header {
+    background-color: $white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "burger survival"
+        "nav nav";
+        grid-template-columns: 20% auto;
+
+        @include lg {
+            grid-template-areas: "nav survival";
+            grid-template-columns: 20% auto;
+        }
+
+        #button-container {
+            grid-area: survival;
+            padding: 10px;
+            text-align: right;
+
+           button {
+                background-color: $yellow;
+                border-radius: 23px;
+                color: $black;
+                display: inline-block;
+                font-size: rem-calc(18);
+                font-weight: 700;
+                padding: 10px 20px;
+                border: none;
+                transition: 0.25s;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+
+            
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+                font-size: rem-calc(30);
+            }
+        }
+
+        #nav-container {
+            background-color: $charcoal;
+            display: none;
+            grid-area: nav;
+            padding: 20px 10px 10px;
+
+            @include lg {
+                background-color: $white;
+                display: block !important;
+            }
+        }
+    }
+}
