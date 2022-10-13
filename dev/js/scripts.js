@@ -34,7 +34,7 @@ function heroAnimation(){
 
 
 function boxAnimation(){
-    var tl = gsap.timeline({scrollTrigger: { trigger: "#box", markers: true, scrub:true, end:"bottom center", start:"top 80%"}});
+    var tl = gsap.timeline({scrollTrigger: { trigger: "#box", markers: false, scrub:true, end:"bottom center", start:"top 80%"}});
     
     tl.from("#box", {duration: 1,alpha: 0,rotation: -180,x: "-=300%"})
       .to("#box", {duration: 1 ,rotation: 48,y: 200})
@@ -44,8 +44,10 @@ function boxAnimation(){
 
 
 function peakAnimation(){
-    var tl = gsap.timeline();
-
+    var tl = gsap.timeline({scrollTrigger:{trigger:"#hiking", scrub:true,markers:true, end:"top 30%"}});
+    tl.from("#hiking aside div",{duration:1, scale:3, alpha:0},"startPeak")
+    .from("#hiking h1",{duration:1,x:"-=200%", alpha:0},"startPeak")
+    .from("#hiking p",{duration:1,x:"-=200%", alpha:0},"startPeak")
     return tl;
 }
 
