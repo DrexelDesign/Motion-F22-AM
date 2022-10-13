@@ -1,0 +1,13 @@
+{
+  "name": "codekit-project",
+  "version": "1.0.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "gsap": {
+      "version": "3.11.1",
+      "resolved": "https://registry.npmjs.org/gsap/-/gsap-3.11.1.tgz",
+      "integrity": "sha512-UKuJ0UPhntFHMwT6URFQ4cTQv88xc7Kd9Dhxt7qX9IPhC+d+/a5wKW5E5Vn33hZ53nBI1JfApcEbzKgXkcuPZw=="
+    }
+  }
+}

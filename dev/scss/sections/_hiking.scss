@@ -1,0 +1,60 @@
+#hiking{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hiking .";
+    margin: 24px 0;
+
+    @include md{
+        grid-template-columns: auto 90vw auto;
+        margin: 48px 0;
+    }
+
+    @include lg{
+        grid-template-columns: auto 80vw auto;
+        margin: 64px 0;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div{
+        grid-area: hiking;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+
+            h1{
+                font-weight: 300;
+                font-size: rem-calc(50);
+            }
+
+            p{
+                
+            }
+        }
+
+        aside{
+            height: 100vh;
+
+            @include md{
+                height: 70vh;
+            }
+
+            div{
+                background-image: url("../img/hiking/hiking.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+            }
+        }
+    }
+}

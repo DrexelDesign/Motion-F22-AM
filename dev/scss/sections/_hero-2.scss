@@ -1,0 +1,32 @@
+#hero-2{
+    background-image: url("../img/heroes/hero-2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include md{
+        height: 80vh;
+    }
+
+    @include lg{
+        height: 70vh;
+    }
+
+    >div{
+        text-align: center;
+        color: var(--white);
+
+        h1{
+            font-family: 'Righteous', cursive;
+            font-weight: 400;
+            font-size: rem-calc(80);
+        }
+    }
+
+
+
+
+}

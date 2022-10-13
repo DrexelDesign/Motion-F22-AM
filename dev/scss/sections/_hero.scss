@@ -1,0 +1,60 @@
+#hero{
+    background-image: url("../img/heroes/hero.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 90vh;
+
+    @include md{
+        height: 80vh;
+    }
+
+    @include lg{
+        height: 90vh;
+    }
+
+    #bg{
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1{
+            font-family: 'Righteous', cursive;
+            color: var(--white);
+            // color: rgba(var(--whiteO),0.5);
+            font-size: rem-calc(40);
+            font-weight: 400;
+            margin: 0;
+            
+
+            @include md{
+                font-size: rem-calc(60);
+            }
+
+            span{
+                color: var(--white);
+            }
+        }
+
+        button{
+            border: none;
+            background-color: var(--red);
+            color: var(--white);
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-size: rem-calc(20);
+            margin-top: 24px;
+            cursor: pointer;
+
+            @include md{
+                font-size: rem-calc(25);
+            }
+
+            i{
+                margin-left: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+#demo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    border: 1px solid greenyellow;
+    // background-image: url("../img/heroes/hero-2.jpg");
+    // background-size: cover;
+    // background-position: bottom;
+
+    #box{
+        height: 100px;
+        width: 100px;
+        background-color: var(--red);
+    }
+}
