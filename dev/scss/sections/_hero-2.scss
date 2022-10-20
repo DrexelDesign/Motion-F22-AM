@@ -1,0 +1,28 @@
+/* =============
+    Hero 2
+============= */
+#hero-2{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero-2 .";
+    
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        height: 100vh;
+    }
+
+    div{
+        grid-area: hero-2;
+        // width: 100%;
+        // object-fit: contain;
+        background-image: url("../img/hero-2/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        z-index: -1;
+    }
+}

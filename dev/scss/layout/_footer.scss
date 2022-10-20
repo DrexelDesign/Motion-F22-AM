@@ -1,0 +1,47 @@
+/* =============
+    Footer
+============= */
+footer {
+    background-color: var(--yellow);
+    display: grid;
+    grid-template-areas: ". footer .";
+    grid-template-columns: 10px auto 10px;
+    padding: 45px 0 40px;
+    text-align: center;
+
+    >div {
+        grid-area: footer;
+
+        h1 {
+            font-size: rem-calc(20);
+            margin-bottom: 10px;
+
+            span {
+                color: var(--white);
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 10px;
+
+                a:link,
+                a:visited {
+                    color: var(--black);
+                    font-size: rem-calc(30);
+                    transition: 0.25s;
+
+                    &:hover,
+                    &:active {
+                        color: var(--white);
+                    }
+                }
+
+                
+            }
+        }
+    }
+}

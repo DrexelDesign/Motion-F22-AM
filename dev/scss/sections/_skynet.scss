@@ -1,0 +1,116 @@
+/* =============
+    Skynet
+============= */
+#skynet{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". skynet .";
+    background-color: var(--white);
+
+    @include md {
+        padding: 54px 0;
+    }
+
+    @include lg {
+        padding: 100px 0;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div{
+        grid-area: skynet;
+
+        ul {
+            display: grid;
+            grid-area: section-5;
+            grid-gap: 20px;
+            grid-template-areas: "gallery-7"
+                "gallery-1"
+                "gallery-1"
+                "gallery-6"
+                "gallery-3";
+            grid-template-rows: repeat(5, 235px);
+    
+            @include md {
+                grid-template-areas: "gallery-1 gallery-3"
+                    "gallery-1 gallery-7"
+                    "gallery-5 gallery-6";
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 277px);
+            }
+    
+            @include lg {
+                grid-template-areas: "gallery-1 gallery-5 gallery-2"
+                    "gallery-1 gallery-7 gallery-4"
+                    "gallery-6 gallery-3 gallery-4";
+                grid-template-columns: repeat(3, 1fr);
+            }
+    
+            li {
+                background-position: center;
+                background-size: cover;
+                
+            }
+    
+            #gallery-1 {
+                background-image: url("../img/skynet/gallery-1.jpg");
+                grid-area: gallery-1;
+            }
+    
+            #gallery-2 {
+                background-image: url("../img/skynet/gallery-2.jpg");
+    
+                @include lg {
+                    grid-area: gallery-2;
+                }
+            }
+    
+            #gallery-3 {
+                background-image: url("../img/skynet/gallery-3.jpg");
+                background-position: center top;
+                grid-area: gallery-3;
+            }
+    
+            #gallery-4 {
+                background-image: url("../img/skynet/gallery-4.jpg");
+    
+                @include lg {
+                    grid-area: gallery-4;
+                }
+            }
+    
+            #gallery-5 {
+                background-image: url("../img/skynet/gallery-5.jpg");
+    
+                @include md {
+                    grid-area: gallery-5;
+                }
+            }
+    
+            #gallery-6 {
+                background-image: url("../img/skynet/gallery-6.jpg");
+                grid-area: gallery-6;
+            }
+    
+            #gallery-7 {
+                align-items: center;
+                color: var(--yellow);
+                display: flex;
+                font-family: 'Pacifico', cursive;
+                grid-area: gallery-7;
+                justify-content: center;
+    
+                h1 {
+                    font-size: rem-calc(43);
+                    font-weight: 400;
+    
+                    @include md {
+                        font-size: rem-calc(46);
+                    }
+                }
+            }
+        }
+    }
+}
