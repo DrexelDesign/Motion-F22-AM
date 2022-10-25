@@ -5,10 +5,6 @@ import { GSDevTools } from "gsap/GSDevTools";
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 
-// gsap.set("#square",{rotation:180});
-
-
-
 function drawLines(){
     var tl = gsap.timeline();
     tl.fromTo("#square",{drawSVG:"75% 75%"},{duration:2, fill:"white", drawSVG:"25% 125%"},"same")
