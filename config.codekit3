@@ -7,7 +7,7 @@
       "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
@@ -39,6 +39,22 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/content\/svg-parts\/svg-head.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/svg-parts\/svg-head.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/svg.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/svg.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -81,7 +97,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -241,6 +257,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_svg.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_svg.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -255,6 +286,12 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -281,7 +318,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-Josh",
+    "displayValue" : "Motion-F22-AM",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
@@ -991,7 +1028,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
