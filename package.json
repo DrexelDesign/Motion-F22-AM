@@ -8,6 +8,6 @@
   "repository": {},
   "private": true,
   "dependencies": {
-    "gsap": "^3.11.3"
+    "gsap": "file:gsap-bonus.tgz"
   }
 }
