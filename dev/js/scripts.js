@@ -11,17 +11,13 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function drawLines(){
     var tl = gsap.timeline();
-    tl.from("#square",{duration:2, fill:"white", drawSVG:"50px 20px", rotate:180, transformOrigin:"center top"},"same")
+    tl.fromTo("#square",{drawSVG:"0% 5%"},{duration:2, fill:"white", drawSVG:"100% 100%"},"same")
     .from("#line",{duration:2, drawSVG:"0%"},"same");
     return tl;
 }
 
 var mainTl = gsap.timeline();
 mainTl.add(drawLines());
-
-
-
-
 
 
 GSDevTools.create();
