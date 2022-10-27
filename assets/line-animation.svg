@@ -6,7 +6,7 @@
 <circle id="right-ball" cx="1067" cy="305" r="33.5" fill="white" stroke="black" stroke-width="3"/>
 <circle id="center-outline" cx="632" cy="305" r="152.5" fill="white" stroke="black" stroke-width="3"/>
 <circle id="center" cx="632" cy="305" r="130" fill="black"/>
-<rect id="top-clip" x="496" y="25" width="273" height="277" fill="#33FF00"/>
 <rect id="bottom-clip" x="465" y="305" width="329" height="168" fill="#2AB508"/>
+<circle id="new-clip" cx="629" cy="223" r="195" fill="#D9D9D9"/>
 </g>
 </svg>

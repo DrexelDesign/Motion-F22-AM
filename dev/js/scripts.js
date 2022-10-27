@@ -6,7 +6,33 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools);
 
 function simpleMotion(){
 
+      // make a var that represents the line in the SVG
+      var line = document.querySelector("#center-line");
+      // make a var that uses the svg line var from above and sets the BBox property
+      line = line.getBBox();
+      // print out the width of the line. This should make your Figma file
+      // console.log(line.width)
+  
+      var leftBall = document.querySelector("#left-ball");
+      leftBall = leftBall.getBBox();
+  
+      var center = document.querySelector("#center");
+      center = center.getBBox();
+      // console.log(center.height)
+
+      gsap.set("#left-ball",{x:line.width / 2 + leftBall.width / 2, transformOrigin:"center" })
+      gsap.set("#right-ball",{x:-line.width/2 - leftBall.width / 2, transformOrigin:"center" })
+
     var tl = gsap.timeline();
+    tl.from("#right-ball",{scale:0, duration:0.25, drawSVG: 0})
+      .from("#left-ball",{scale:0, duration:0.25},"-=50%")
+      .to("#right-ball",{x:0, duration:0.25},"rollOut")
+      .to("#left-ball",{x:0, duration:0.25},"rollOut")
+      .fromTo("#center-line",{drawSVG:"50% 50%"},{duration:0.25, drawSVG: "0% 100%"},"rollOut")
+      .from("#center",{duration: 0.25, scale:0, transformOrigin:"center"},"-=50%")
+      .to("#center",{duration: 0.25, y: -center.height / 2 - 50},"-=50%")
+      .to("#center",{duration: 0.15, y: 0})
+      .fromTo("#center-outline",{drawSVG:"100% 50%"},{duration:0.15,drawSVG:"125% 25%"},"-=50%")
 
     return tl;
 
@@ -48,7 +74,7 @@ function UIMotion(){
 
 var mainTL = gsap.timeline();
 mainTL.add(simpleMotion())
-// .add(patternMotion())
+.add(patternMotion())
 .add(UIMotion())
 
 
