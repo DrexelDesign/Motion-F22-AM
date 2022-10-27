@@ -1,0 +1,32 @@
+#drawSVG-container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    .drawSVG{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+
+        .title{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .svg{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                width: 100%;
+            }
+        }
+    }
+
+    .grow-right{
+        // display: none;
+    }
+}

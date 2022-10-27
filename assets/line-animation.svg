@@ -1,0 +1,12 @@
+<svg width="1264" height="611" viewBox="0 0 1264 611" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="line-animation">
+<rect width="1264" height="611" fill="white"/>
+<line id="center-line" x1="232" y1="303.5" x2="1032" y2="303.5" stroke="black" stroke-width="3"/>
+<circle id="left-ball" cx="197" cy="305" r="35" fill="black"/>
+<circle id="right-ball" cx="1067" cy="305" r="33.5" fill="white" stroke="black" stroke-width="3"/>
+<circle id="center-outline" cx="632" cy="305" r="152.5" fill="white" stroke="black" stroke-width="3"/>
+<circle id="center" cx="632" cy="305" r="130" fill="black"/>
+<rect id="top-clip" x="496" y="25" width="273" height="277" fill="#33FF00"/>
+<rect id="bottom-clip" x="465" y="305" width="329" height="168" fill="#2AB508"/>
+</g>
+</svg>
