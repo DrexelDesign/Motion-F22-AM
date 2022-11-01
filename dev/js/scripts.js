@@ -1,25 +1,18 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
-
-MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
-
+gsap.registerPlugin(GSDevTools);
 
 function morphShapes(){
     var tl = gsap.timeline();
-    tl.to("#star",{duration:2,morphSVG:"#box"});
+    tl.to("#ball",{duration:1,y:-300, transformOrigin:"center", ease:"none"})
+    .to("#ball",{duration:0.75,y:0, transformOrigin:"center", ease: "bounce.out"})
     return tl;
 }
 
 
 var mainTL = gsap.timeline();
 mainTL.add(morphShapes());
-
-
-
-
 
 
 GSDevTools.create();
