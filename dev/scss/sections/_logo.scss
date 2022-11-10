@@ -1,0 +1,24 @@
+#logo{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: 
+    ". . ."
+    ". logo ."
+    ". . .";
+    grid-template-rows: 20% auto 20%;
+    height: 100vh;
+
+    >div{
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: #F0F0F0;
+        
+
+        svg{
+            // width: 50%;
+            
+        }
+    }
+}
