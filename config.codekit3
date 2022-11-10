@@ -40,6 +40,16 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/design\/tekni-logo-update.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/tekni-logo-update.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/design\/tekni-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -302,6 +312,19 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/Screen Shot 2022-09-12 at 6.06.17 PM.png" : {
+      "ft" : 32768,
+      "iS" : 136818,
+      "oA" : 0,
+      "oAP" : "\/Screen Shot 2022-09-12 at 6.06.17 PM.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/video\/logoReveal.mov" : {
       "cB" : 0,
