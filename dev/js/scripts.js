@@ -69,7 +69,7 @@ function dotAnimation(){
         var tl = gsap.timeline();
         // dot pops out and lands
         tl.from("#dot",{duration:0.01, autoAlpha:0})
-        .from("#dot",{duration:1, motionPath:{path:"#dot-path", align:"#dot-path"},ease: "bounce.out"},"-=0.65");
+        .from("#dot",{duration:1, motionPath:{path:"#dot-path", align:"#dot-path"},ease: "bounce.out"});
         return tl;
 }
 
