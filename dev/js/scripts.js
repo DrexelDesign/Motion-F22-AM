@@ -2,8 +2,9 @@ import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { CustomEase } from "gsap/CustomEase";
 
-gsap.registerPlugin(GSDevTools, DrawSVGPlugin, MotionPathPlugin);
+gsap.registerPlugin(GSDevTools, DrawSVGPlugin, MotionPathPlugin,CustomEase);
 
 gsap.set("#t-down",{scaleY:0.5});
 gsap.set("#t-cross",{transformOrigin: "center"});
@@ -70,6 +71,10 @@ function dotAnimation(){
         // dot pops out and lands
         tl.from("#dot",{duration:0.01, autoAlpha:0})
         .from("#dot",{duration:1, motionPath:{path:"#dot-path", align:"#dot-path"},ease: "bounce.out"});
+
+        // .from("#dot",{duration:1, motionPath:{path:"#dot-path", align:"#dot-path"},ease: CustomEase.create("custom", "M0,0,C0.14,0,0.242,0.438,0.272,0.561,0.313,0.728,0.354,0.963,0.362,1,0.37,0.985,0.414,0.873,0.455,0.811,0.51,0.726,0.573,0.597,0.586,0.606,0.662,0.656,0.719,0.981,0.726,0.998,0.788,0.914,0.853,0.802,0.872,0.816,0.891,0.83,0.897,0.985,0.911,0.998,0.922,0.994,0.939,0.984,0.954,0.984,0.969,0.984,1,1,1,1")});
+
+        
         return tl;
 }
 
