@@ -327,10 +327,6 @@ template {
 /* =============
     Base
 ============= */
-.hidden {
-  visibility: hidden;
-}
-
 /* =============
     Typography
 ============= */
