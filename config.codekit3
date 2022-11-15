@@ -9,11 +9,41 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
+    "\/assets\/clip-path.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/clip-path.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/Launch.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/Launch.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/tree 1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/tree 1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/tree 2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/tree 2.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -50,19 +80,19 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/motion-path.kit" : {
+    "\/dev\/content\/clip-path.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/motion-path.html",
+      "oAP" : "\/dev\/content\/clip-path.html",
       "oF" : 0
     },
     "\/dev\/content\/svgs\/front.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/content\/svgs\/front.html",
       "oF" : 0
     },
@@ -70,7 +100,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/content\/svgs\/trees.html",
       "oF" : 0
     },
@@ -275,7 +305,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_motion-path.scss" : {
+    "\/dev\/scss\/sections\/_clip-path.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -284,7 +314,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_motion-path.css",
+      "oAP" : "\/dev\/scss\/sections\/_clip-path.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
